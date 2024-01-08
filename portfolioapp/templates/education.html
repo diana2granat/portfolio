@@ -1,0 +1,31 @@
+{% extends 'about.html' %}
+{% block title %}Education{% endblock %}
+{% load static %}
+{% block content %}
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+            <h1 id="positions" class="center-align blue-text text-darken-2">Education</h1>
+            <p id="positions2">Attaining a Master of Science from the Faculty of Electrical Engineering at Warsaw University of Technology marks a milestone in my journey as a software engineer, signifying a deepened understanding of advanced concepts and practices in the field. This academic accomplishment builds upon my earlier achievement of a Bachelor of Engineering from the same esteemed institution, highlighting the continuous progression of skills and knowledge in software engineering.</p>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5 id="positions">Master of Science</h5>
+                    <h6 id="positions">Faculty of Electrical Engineering</h6>
+                    <h6 id="positions">Warsaw Univerity of Technology
+                        <a href="https://eng.pw.edu.pl/" target="_blanck"><p><img id="imged" src="{% static 'Warsaw_University_of_Technology.png' %}"></p></a>
+                    </h6>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5 id="positions">Bechelor of Engineering</h5>
+                    <h6 id="positions">Faculty of Electrical Engineering</h6>
+                    <h6 id="positions">Warsaw Univerity of Technology
+                        <a href="https://eng.pw.edu.pl/" target="_blanck"><p><img id="imged" src="{% static 'Warsaw_University_of_Technology.png' %}"></p></a>
+                    </h6>
+                </div>
+            </div> 
+        </div>
+    </div>
+</article>
+{% endblock  %}

@@ -1,0 +1,163 @@
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Preconnect to Google Fonts domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Link to the Google Fonts stylesheet for Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Link to the Social Media buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>{% block title %} About {% endblock %}</title>
+</head>
+<body>
+    <nav class="transparent z-depth-0">
+        <div class="nav-wrapper">
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <!--<a href="#" class="brand-logo center">Portfolio</a>-->
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'projects' %}">Projects</a></li>
+                <li><a href="{% url 'education' %}">Education</a></li>
+                <li><a href="{% url 'moreinfo' %}">More Info</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+<!-- Side Navigation -->
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="{% url 'about' %}">About</a></li>
+  <li><a href="{% url 'projects' %}">Projects</a></li>
+  <li><a href="{% url 'education' %}">Education</a></li>
+  <li><a href="{% url 'moreinfo' %}">More Info</a></li>
+  <li><a href="{% url 'contact' %}">Contact</a></li>
+</ul>
+
+{% block content %}
+      <article>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m12">
+              <h1 id="dianagranat" class="center-align black-text text-darken-2">Diana Granat</h1>
+              <p id="positions2">Transitioning to Data Engineering, I leverage over four years of IT project management experience, specializing in Agile methodologies. My background in electrical engineering and business analysis equips me to understand and communicate technical concepts effectively.
+              I have a successful track record in developing features that enhance user engagement and drive business growth. 
+              </p>
+              <div class="container">
+                <div class="timeline">
+                  
+                  <div class="timeline-event">
+                    <div class="card timeline-content">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{% static 'developer.jpg' %}">
+                        <span class="card-title gradient white-text text-darken-4">
+                          2024<br>
+                          <big>Software Developer</big>
+                        </span>
+                      </div>
+                      <div class="card-content pink lighten-5 grey-text">
+                        <p>Full-Stack Django Software Development</p>
+                      </div>
+                    </div>
+                    <div class="timeline-badge red lighten-3 white-text"></div>
+                  </div>
+                  
+                  
+                  <div class="timeline-event">
+                    <div class="card timeline-content">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{% static 'projectmanager.jpeg' %}">
+                        <span class="card-title gradient white-text text-darken-4">
+                          2019 - 2023<br>
+                          <big>Project Manager</big>
+                        </span>
+                      </div>
+                      <div class="card-content pink lighten-5 grey-text">
+                        <p>3D Scanning Software | Parking Solutions Systems.</p>
+                      </div>
+                    </div>
+                    <div class="timeline-badge red lighten-3 white-text"></div>
+                  </div>
+                  
+                  
+                  <div class="timeline-event">
+                    <div class="card timeline-content">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{% static 'analyst.png' %}">
+                        <span class="card-title gradient white-text text-darken-4">
+                          2016 - 2019 <br>
+                          <big>Business Analyst</big>
+                        </span>
+                      </div>
+                      <div class="card-content pink lighten-5 grey-text">
+                        <p>Parking Solutions Systems - Mobile and Web development.</p>
+                      </div>
+                    </div>
+                    <div class="timeline-badge red lighten-3 white-text"></div>
+                  </div>
+                  
+                  <div class="timeline-event">
+                    <div class="card timeline-content">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{% static 'engineer.jpg' %}">
+                        <span class="card-title gradient white-text text-darken-4">
+                          2013 - 2016<br>
+                          <big>Electrical Engineer</big>
+                        </span>
+                      </div>
+                      <div class="card-content pink lighten-5 grey-text">
+                        <p>Building Automation Development | Water Pump Systems Development</p>
+                      </div>
+                    </div>
+                    <div class="timeline-badge red lighten-3 white-text"></div>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </article>
+      {% endblock  %}
+      <footer class="card-panel transparent">
+        <div class="container">
+          <div class="row">
+            <div class="col m6">
+              <p>Copyright @DianaGranat</p>
+            </div>
+            <div id="socialbuttons" class="col m4 offset-s7">
+              <a href="https://github.com/diana2granat" class="fab fa-github fa-2x"></a>
+              <a href="https://www.linkedin.com/in/diana-granat-7181581a0/"class="fab fa-linkedin-in fa-2x"></a>
+              <a href="https://www.facebook.com/diana.kuprianowicz/" class="fab fa-instagram fa-2x"></a>
+              <a href="https://www.facebook.com/diana.kuprianowicz/" class="fab fa-facebook-f fa-2x"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+</html>

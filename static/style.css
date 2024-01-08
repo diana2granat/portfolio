@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('skybackground.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+.content {
+  padding: 20px;
+}
+#dianagranat {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-weight: 400;
+}
+#positions {
+  font-family: 'Assistant', sans-serif;
+  text-align: center;
+  font-weight: 200;
+}
+#positionsright {
+  font-family: 'Assistant', sans-serif;
+  text-align: right;
+  font-weight: 200;
+}
+#positionsleft {
+  font-family: 'Assistant', sans-serif;
+  text-align: left;
+  font-weight: 200;
+}
+#positions2 {
+  font-family: 'Assistant', sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+.icon-block {
+  text-align: center;
+  vertical-align: middle;
+}
+.icon-block i {
+  vertical-align: middle;
+}
+#footer {
+  font-family: 'Assistant', sans-serif;
+  text-align: left;
+  font-weight: 200;
+}

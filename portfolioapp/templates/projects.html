@@ -1,0 +1,82 @@
+{% extends 'about.html' %}
+{% block title %}Projects{% endblock %}
+{% load static %}
+{% block content %}
+<article>
+  <div class="container">
+      <div class="row">
+          <div class="col s12 m12">
+            <h1 id="positions" class="center-align blue-text text-darken-2">Projects</h1>
+            <p id="positions2">The following table provides a comprehensive list of the projects in which I was involved, showcasing my multifaceted contributions and experiences.</p>
+                <div class="col s12 m12 l6">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{% static 'restaurant.jpg' %}">
+                        </div>
+                        <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Table Booking<i class="material-icons right">more_vert</i></span>
+                        <p id="title">Developer</p>                        
+                        </div>
+                        <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Online booking tables system<i class="material-icons right">close</i></span>
+                        <p>I've crafted a sophisticated software solution tailored for restaurants, enabling seamless online table reservations and management. Empowering customers with the convenience of booking tables effortlessly. Explore the 
+                            <a href="https://github.com/diana2granat/RestaurantBookingSystem" target="_blank">Github repository</a> 
+                             for the code and dive into the innovation
+                        </p>
+                        </div>
+                    </div>
+                </div>             
+                <div class="col s12 m12 l6">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="{% static 'smsvalet.jpg' %}">
+                            </div>
+                            <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Parking Software<i class="material-icons right">more_vert</i></span>
+                            <p id="title">Project Manager | Business Analyst</p>                            </div>
+                            <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Fully ticketless valet solution.<i class="material-icons right">close</i></span>
+                            <p>I analyzed and coordinated the implementation of key features for a popular <a href="https://smsvalet.com" target="_blank">SMS Valet</a> application, a state-of-the-art car park management system. Leading the development efforts, I successfully introduced new product features that significantly enhanced user engagement, ultimately driving a substantial increase in monthly active users to over a few million</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="col s12 m12 l6">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{% static 'koluszki.jpg' %}">
+                        </div>
+                        <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Warehouse Automation<i class="material-icons right">more_vert</i></span>
+                        <p id="title">Engineer</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Heating and lightning systems<i class="material-icons right">close</i></span>
+                            <p>I coded the warehouse's automation system, making sure everything runs smoothly and efficiently. I improved the system's reliability, helping the warehouse operate at its best and meet high automation standards. This not only kept things running smoothly but also made the facility more efficient and sustainable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m12 l6">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="{% static 'kruszyniany.jpg' %}">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Museum Automation<i class="material-icons right">more_vert</i></span>
+                                <p id="title">Engineer</p>
+                            </div>
+                            <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Heating and lightning systems<i class="material-icons right">close</i></span>
+                            <p>I handled the programming for the museum's automation system, ensuring it operates smoothly and efficiently. My work involved coding to enhance the system's functionality, contributing to the overall operational effectiveness of the  <a href="https://centrumkruszyniany.pl/" target="_blank">Tatar museum</a> .</p>
+                            </div>
+                    </div>
+                </div>
+                             
+              
+          </div> 
+      </div>
+  </div>
+</article>
+{% endblock  %}
