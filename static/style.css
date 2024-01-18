@@ -18,30 +18,137 @@ body{
   text-align: center;
   font-weight: 200;
 }
-#positionsright {
-  font-family: 'Assistant', sans-serif;
-  text-align: right;
-  font-weight: 200;
-}
-#positionsleft {
-  font-family: 'Assistant', sans-serif;
-  text-align: left;
-  font-weight: 200;
-}
 #positions2 {
   font-family: 'Assistant', sans-serif;
-  text-align: center;
+  text-align: left;
   font-weight: 400;
-}
-.icon-block {
-  text-align: center;
-  vertical-align: middle;
-}
-.icon-block i {
-  vertical-align: middle;
 }
 #footer {
   font-family: 'Assistant', sans-serif;
   text-align: left;
   font-weight: 200;
+}
+.timeline {
+  position: relative;
+  .timeline-event {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .timeline-content {
+      position: relative;
+      width: calc(50% - 50px);
+    }
+    &::before {
+      display: block;
+      content: "";
+      width: 2px;
+      height: calc(50% - 30px);
+      position: absolute;
+      background: #d2d2d2;
+      left: calc(50% - 1px);
+      top: 0;
+    }
+    &::after {
+      display: block;
+      content: "";
+      width: 2px;
+      height: calc(50% - 30px);
+      position: absolute;
+      background: #d2d2d2;
+      left: calc(50% - 1px);
+      top: calc(50% + 30px);
+    }
+    &:first-child::before, &:last-child::after {
+      display: none;
+    }
+    &:nth-child(even) .timeline-content {
+      margin-left: calc(50% + 50px);
+    }
+    &:nth-child(odd) .timeline-content {
+      margin-left: 0;
+    }
+  }
+  .timeline-badge {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #d2d2d2;
+    top: calc(50% - 8px);
+    right: calc(50% - 8px);
+    border-radius: 50%;
+    text-align: center;
+    cursor: default;
+  }
+}
+@media (max-width: 600px) {
+  .timeline {
+    .timeline-event {
+      .timeline-content {
+        width: calc(100% - 70px);
+      }
+      &::before, &::after {
+        left: 19px;
+      }
+      &:nth-child(even) .timeline-content, &:nth-child(odd) .timeline-content {
+        margin-left: 70px;
+      }
+    }
+    .timeline-badge {
+      left: 12px;
+    }
+  }
+}
+.card-title {
+  /*font-weight: 600!important;*/
+	line-height: 1em;
+	&.gradient {
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		padding-bottom: 64px;
+		display: block;
+		width: 100%;
+		background-color: rgba(0,0,0,5);
+		background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0.8) 100%);
+	}
+}
+
+.card{
+  width: 300px;
+  margin-left: 30px;
+}
+.fab {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.fab:hover {
+  background-color: rgba(64, 67, 63, 0.114);
+  font-size: 150%
+}
+#imged{
+  border: 0px;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100px;
+}
+#title{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(49, 49, 123);
+}
+#dianapic{
+  border: 0px;
+  border-radius: 2px;
+  width: 500px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: block;  
+  margin-left: auto;  
+  margin-right: auto;  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust the shadow color and size as needed */
 }
