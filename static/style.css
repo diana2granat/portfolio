@@ -4,6 +4,9 @@ body{
   background-image: url('skybackground.jpg');
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 .content {
   padding: 20px;
@@ -114,10 +117,6 @@ body{
 	}
 }
 
-.card{
-  width: 300px;
-  margin-left: 30px;
-}
 .fab {
   padding: 10px;
   font-size: 30px;
@@ -151,4 +150,29 @@ body{
   margin-left: auto;  
   margin-right: auto;  
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust the shadow color and size as needed */
+  margin-bottom: 10%;
+}
+@media (max-width: 500px) {
+  #dianapic {
+    max-width: 100%; /* Set the maximum width to 100% for smaller screens */
+    width: auto; /* Allow the image to scale proportionally */
+    height: auto; /* Allow the image to scale proportionally */
+    /* margin-left: 10px; Add some margin for better spacing on smaller screens */
+    /* margin-right: 10px;  Add some margin for better spacing on smaller screens */
+    max-height: 80vh; /* Set a maximum height based on the viewport height */
+  }
+}
+footer {
+  bottom: 0;
+  margin-top: auto; /* This pushes the footer to the bottom */
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  padding: 24px;
+  /* margin: 0.5rem 0 1rem 0; */
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0) !important;
+}
+main {
+  flex: 1 0 auto;
 }
