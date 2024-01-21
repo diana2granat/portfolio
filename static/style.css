@@ -162,7 +162,7 @@ body{
     max-height: 80vh; /* Set a maximum height based on the viewport height */
   }
 }
-footer {
+.footer {
   bottom: 0;
   margin-top: auto; /* This pushes the footer to the bottom */
   transition: box-shadow .25s, -webkit-box-shadow .25s;
