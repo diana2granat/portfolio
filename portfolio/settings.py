@@ -131,3 +131,12 @@ STATIC_ROOT=os.path.join(BASE_DIR,"static")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 GOOGLE_ANALYTICS_MODEL = True
+
+# Email settings for Gmail
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'diana2granat@gmail.com'  # Your Gmail email address
+EMAIL_HOST_PASSWORD = 'your_gmail_password'  # Your Gmail password or app-specific password
+DEFAULT_FROM_EMAIL = 'diana2granat@gmail.com'  # The default sender email address (should be the same as EMAIL_HOST_USER)
